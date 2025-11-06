@@ -14,7 +14,3 @@
 &usbd {
     status = "okay";
 };
-
-&ble {
-    status = "disabled";
-};
