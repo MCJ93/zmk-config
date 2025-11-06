@@ -1,0 +1,26 @@
+/ {
+    chosen {
+        zmk,split-role = "central";
+        zmk,split = &wired_split;
+    };
+
+    wired_split: wired_split {
+        compatible = "zmk,wired-split";
+        device = <&uart0>;
+    };
+};
+
+/* USB */
+&usbd { status = "okay"; };
+&zephyr_udc0 { status = "okay"; };
+
+/* Aktywuj UART0 (bez ręcznego przypisywania pinów) */
+&uart0 {
+    status = "okay";
+    current-speed = <115200>;
+};
+
+/* Wymuś driver RGB (jeśli istnieje w boardie) */
+&rgb_underglow {
+    status = "okay";
+};
