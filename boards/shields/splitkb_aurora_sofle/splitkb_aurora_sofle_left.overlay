@@ -1,11 +1,11 @@
 / {
     chosen {
-        zmk,split = &wired_split;
+        zmk,split-role = "central";
     };
 
     wired_split: wired_split {
         compatible = "zmk,wired-split";
         label = "Wired split (left)";
-        device = <&uart1>;  /* lub &uart0 – w zależności który port TRRS masz aktywny */
+        device = <&uart1>;
     };
 };
