@@ -17,7 +17,3 @@
 &zephyr_udc0 {
     status = "okay";
 };
-
-&bluetooth {
-    status = "disabled";
-};
