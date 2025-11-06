@@ -1,0 +1,11 @@
+/ {
+    chosen {
+        zmk,split = &wired_split;
+    };
+
+    wired_split: wired_split {
+        compatible = "zmk,wired-split";
+        label = "Wired split (right)";
+        device = <&uart1>;  /* ten sam UART co w lewej */
+    };
+};
