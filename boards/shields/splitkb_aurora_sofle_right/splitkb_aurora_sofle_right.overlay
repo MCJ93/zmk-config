@@ -1,0 +1,16 @@
+/ {
+    chosen {
+        zmk,split-role = "peripheral";
+    };
+
+    wired_split: wired_split {
+        compatible = "zmk,wired-split";
+        device = <&uart0>;
+    };
+};
+
+/* Uaktywnij uart (peripheral też może wymagać enabled jeśli board to wymaga) */
+&uart0 { status = "okay"; current-speed = <115200>; };
+
+/* Ensuring rgb driver on peripheral side as well (optional) */
+&rgb_underglow { status = "okay"; };
