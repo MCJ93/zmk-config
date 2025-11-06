@@ -6,11 +6,18 @@
 
     wired_split: wired_split {
         compatible = "zmk,wired-split";
-        label = "Wired split (left)";
         device = <&uart0>;
     };
 };
 
 &usbd {
     status = "okay";
+};
+
+&zephyr_udc0 {
+    status = "okay";
+};
+
+&bluetooth {
+    status = "disabled";
 };
