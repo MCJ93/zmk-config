@@ -23,20 +23,11 @@ include:
     shield: splitkb_aurora_sofle_left
     shield-dir: boards/shields
     snippet: studio-rpc-usb-uart
-    cmake-args: >
-      -DCONFIG_ZMK_SPLIT=y
-      -DCONFIG_ZMK_STUDIO=y
-      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-      -DCONFIG_ZMK_USB=y
-      -DCONFIG_USB_DEVICE_STACK=y
-      -DCONFIG_USB_DEVICE_HID=y
-      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    conf: config/sofle_central.conf
     artifact-name: sofle_left_with_studio
 
   - board: nice_nano_v2
     shield: splitkb_aurora_sofle_right
     shield-dir: boards/shields
-    cmake-args: >
-      -DCONFIG_ZMK_SPLIT=y
-      -DCONFIG_ZMK_SPLIT_ROLE_PERIPHERAL=y
+    conf: config/sofle_peripheral.conf
     artifact-name: sofle_right
