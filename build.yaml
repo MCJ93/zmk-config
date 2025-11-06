@@ -26,6 +26,10 @@ include:
     cmake-args: >
       -DCONFIG_ZMK_STUDIO=y
       -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+      -DCONFIG_ZMK_USB=y
+      -DCONFIG_USB_DEVICE_STACK=y
+      -DCONFIG_USB_DEVICE_HID=y
+      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: sofle_left_with_studio
 
   - board: nice_nano_v2
