@@ -1,25 +1,11 @@
 / {
-    chosen {
-        /* Ta połowa jest centralna (lewa, z USB) */
-        zmk,split-role = "central";
-        zmk,split = &wired_split;
-    };
-
-    wired_split: wired_split {
+    wired_split {
         compatible = "zmk,wired-split";
-        device = <&uart0>;
+        device = <&pro_micro_serial>;
     };
 };
 
-&usbd {
-    status = "okay";
-};
-
-&zephyr_udc0 {
-    status = "okay";
-};
-
-&uart0 {
+&pro_micro_serial {
     status = "okay";
     current-speed = <115200>;
 };
