@@ -7,7 +7,7 @@
     wired_split: wired_split {
         compatible = "zmk,wired-split";
         label = "Wired split (left)";
-        device = <&uart1>;   /* TRRS TX/RX połączenie */
+        device = <&uart0>;
     };
 };
 
