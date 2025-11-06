@@ -9,3 +9,11 @@
         device = <&uart0>;
     };
 };
+
+&usbd {
+    status = "okay";
+};
+
+&ble {
+    status = "disabled";
+};
