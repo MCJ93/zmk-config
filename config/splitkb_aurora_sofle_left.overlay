@@ -1,0 +1,20 @@
+/ {
+    chosen {
+        zmk,split-role = "central";
+        zmk,split = &wired_split;
+    };
+
+    wired_split: wired_split {
+        compatible = "zmk,wired-split";
+        label = "Wired split (left)";
+        device = <&uart0>;
+    };
+};
+
+&usbd {
+    status = "okay";
+};
+
+&ble {
+    status = "disabled";
+};
