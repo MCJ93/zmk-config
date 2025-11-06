@@ -21,7 +21,4 @@
 include:
   - board: nice_nano_v2
     shield: splitkb_aurora_sofle_left
-    shield-dir: boards/shields
-  - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_right
-    shield-dir: boards/shields
+    conf: config/sofle_left_standalone.conf
