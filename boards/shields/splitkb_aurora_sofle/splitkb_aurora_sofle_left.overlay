@@ -1,11 +1,11 @@
 / {
     chosen {
-        zmk,split-role = "peripheral";
+        zmk,split-role = "central";
     };
 
     wired_split: wired_split {
         compatible = "zmk,wired-split";
-        label = "Wired split (right)";
+        label = "Wired split (left)";
         device = <&uart1>;
     };
 };
