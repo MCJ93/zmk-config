@@ -6,6 +6,6 @@
     wired_split: wired_split {
         compatible = "zmk,wired-split";
         label = "Wired split (right)";
-        device = <&uart1>;
+        device = <&uart0>;
     };
 };
