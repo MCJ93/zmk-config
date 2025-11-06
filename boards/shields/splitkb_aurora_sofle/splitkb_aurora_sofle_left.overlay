@@ -2,6 +2,8 @@
     chosen {
         zmk,split-role = "central";
         zmk,split = &wired_split;
+f
+wefwefwefwef wefwefwef
     };
 
     wired_split: wired_split {
