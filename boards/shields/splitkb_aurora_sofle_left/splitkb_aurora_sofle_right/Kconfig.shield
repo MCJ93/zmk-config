@@ -1,3 +1,0 @@
-# SPDX-License-Identifier: MIT
-config SHIELD_SPLITKB_AURORA_SOFLE_RIGHT
-    bool "splitkb_aurora_sofle_right"
